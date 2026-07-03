@@ -2,63 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mahdi Fathalizadeh | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="hero">
-        <h1>Mahdi Fathalizadeh</h1>
-        <p>Financial Management Student | Data Analyst | Python Developer</p>
-        <div class="hero-links">
-            <a href="https://github.com/fathalishah2" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/fathali" target="_blank">LinkedIn</a>
+    <header>
+        <div class="container navbar">
+            <div class="logo">My<span>Portfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary">View Resume <i class="fas fa-download"></i></a>
         </div>
-    </div>
-</header>
+    </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a Financial Management student passionate about data analysis,
-        financial systems, and problem-solving. I enjoy building practical
-        tools using Python and turning raw data into meaningful insights.
-    </p>
-</section>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="avatar">
+                <i class="fas fa-user"></i> </div>
+            <h1>HELLO, I'M <span>[YOUR NAME]</span></h1>
+            <p>[Your Profession / Title] BASED IN [LOCATION]</p>
+            
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
 
-<section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>Data Analysis</span>
-        <span>Power BI</span>
-        <span>SQL</span>
-        <span>Financial Analysis</span>
-        <span>Problem Solving</span>
-    </div>
-</section>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
 
-<section>
-    <h2>Projects</h2>
+    <section id="projects" class="container">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-img-placeholder">
+                    <i class="fas fa-image fa-2x"></i>
+                </div>
+                <h3>Project Name 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                <div class="tech-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary">View Live <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" class="btn btn-outline">View Code <i class="fas fa-code"></i></a>
+                </div>
+            </div>
 
-    <div class="project-card">
-        <h3>Web Scraping</h3>
-        <p>A Python script that fetches 50 valid books published after 2000 from the OpenLibrary API</p>
-        <a href="https://github.com/fathalishah2/book-fetcher" target="_blank">View Project</a>
-    </div>
+            <div class="project-card">
+                <div class="project-img-placeholder">
+                    <i class="fas fa-image fa-2x"></i>
+                </div>
+                <h3>Project Name 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                <div class="tech-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary">View Live <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" class="btn btn-outline">View Code <i class="fas fa-code"></i></a>
+                </div>
+            </div>
 
-</section>
+            <div class="project-card">
+                <div class="project-img-placeholder">
+                    <i class="fas fa-image fa-2x"></i>
+                </div>
+                <h3>Project Name 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary">View Live <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" class="btn btn-outline">View Code <i class="fas fa-code"></i></a>
+                </div>
+            </div>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: mhdifathali@gmail.com</p>
-</section>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2026 Mahdi Fathalizadeh</p>
-</footer>
+    <section id="contact" class="container">
+        <h2 class="section-title">CONTACT</h2>
+        <div class="contact-container">
+            
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-primary" style="width: fit-content;">SEND MESSAGE</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <br>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                <p><i class="fas fa-globe"></i> www.yourwebsite.com</p>
+                <br>
+                <h3>Social Media</h3>
+                <br>
+                <div class="social-icons" style="justify-content: flex-start;">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 </body>
 </html>
